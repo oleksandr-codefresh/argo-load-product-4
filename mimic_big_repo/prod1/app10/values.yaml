@@ -1,0 +1,13 @@
+base:
+  version: 1.28.0
+  rollout: true
+  strategy:
+    canary:
+      steps:
+        - setWeight: 50
+        - pause:
+            duration: 2m
+        - setWeight: 100
+        - pause:
+            duration: 4m
+  progressDeadlineSeconds: 600

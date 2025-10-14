@@ -1,0 +1,9 @@
+apiVersion: v2
+description: nginx
+name: nginx
+version: 0.0.1472
+appVersion: 0.0.1472
+dependencies:
+  - name: base
+    repository: "file://../../test-app-base/"
+    version: 0.0.1
